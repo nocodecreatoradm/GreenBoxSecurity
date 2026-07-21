@@ -1,7 +1,7 @@
 (function () {
   const WHATSAPP_NUMBER = '51924253351';
   const WHATSAPP_DISPLAY = '+51 924 253 351';
-  const EMAIL = 'ventas@greenboxsecurity.com';
+  const EMAIL = 'csotomayor@greenboxsecurity.com';
   const WHATSAPP_MESSAGE = 'Hola, vi la página de GreenBox Security y quiero cotizar un servicio.';
 
   const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;

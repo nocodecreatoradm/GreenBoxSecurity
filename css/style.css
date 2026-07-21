@@ -526,6 +526,68 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
   border-radius: 20px;
 }
 
+/* ---------- Valores ---------- */
+.values-row {
+  max-width: 1280px; margin: 44px auto 0;
+  display: flex; justify-content: center; flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 36px;
+  border-top: 1px solid oklch(1 0 0 / 0.08);
+}
+.value-item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.value-item svg { color: var(--green); }
+.value-item span { font-size: 13px; font-weight: 600; color: oklch(0.85 0.02 260); letter-spacing: .2px; }
+
+/* ---------- Misión / Visión ---------- */
+.mv-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 30px 28px;
+}
+.mv-card__icon {
+  width: 42px; height: 42px; border-radius: 11px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--green-soft-bg); color: var(--green-soft-fg);
+  margin-bottom: 16px;
+}
+.mv-card h3 { font-size: 18px; font-weight: 600; color: var(--text-heading); margin: 0 0 10px; }
+.mv-card p { font-size: 14.5px; line-height: 1.65; color: var(--text-body); margin: 0; }
+
+/* ---------- Checklist (Por qué elegirnos) ---------- */
+.checklist-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px; max-width: 900px; margin: 0 auto;
+}
+.checklist-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 16px 18px;
+  font-size: 14.5px; font-weight: 600; color: var(--text-body-strong);
+}
+.checklist-item svg { color: var(--green); flex-shrink: 0; margin-top: 1px; }
+
+/* ---------- SUCAMEC trust badge ---------- */
+.sucamec-badge {
+  max-width: 760px; margin: 32px auto 0;
+  display: flex; align-items: flex-start; gap: 16px;
+  background: var(--green-soft-bg);
+  border: 1px solid oklch(0.4 0.1 152 / 0.4);
+  border-radius: 14px;
+  padding: 18px 22px;
+}
+.sucamec-badge svg { color: var(--green-soft-fg); flex-shrink: 0; margin-top: 2px; }
+.sucamec-badge strong { display: block; color: var(--text-heading); font-size: 14.5px; margin-bottom: 4px; }
+.sucamec-badge span { font-size: 13px; color: var(--text-body); line-height: 1.55; }
+
+/* ---------- Servicios complementarios (chips) ---------- */
+.extra-services { margin-top: 40px; text-align: center; }
+.extra-services__label { font-size: 13.5px; font-weight: 600; color: var(--text-muted); margin: 0 0 14px; text-transform: uppercase; letter-spacing: .5px; }
+.chip-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.chip {
+  font-size: 13px; font-weight: 500; color: var(--text-body);
+  background: var(--surface); border: 1px solid var(--border);
+  padding: 8px 14px; border-radius: 20px;
+}
+
 /* ---------- FAQ ---------- */
 .faq-list { display: flex; flex-direction: column; gap: 14px; }
 .faq-item {
