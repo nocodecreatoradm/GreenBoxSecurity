@@ -727,6 +727,15 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
 .footer__links a { font-size: 13px; color: var(--text-muted); }
 .footer__links a:hover { color: var(--green); }
 
+.credit-bar {
+  text-align: center;
+  padding: 14px 6vw 26px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.credit-bar a { color: var(--text-muted); text-decoration: underline; }
+.credit-bar a:hover { color: var(--green); }
+
 /* ---------- Legal pages ---------- */
 .legal {
   max-width: 760px;
