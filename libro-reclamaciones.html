@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Libro de Reclamaciones — Green Box Security</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/logo.jpg" alt="" class="nav__logo">
+      <span class="nav__brandname">GREEN<span>BOX</span> SECURITY</span>
+    </a>
+  </header>
+
+  <main class="legal" style="max-width:820px;">
+    <a href="index.html" class="legal__back">← Volver al inicio</a>
+    <h1>Libro de Reclamaciones</h1>
+    <p class="legal__updated">Conforme al Código de Protección y Defensa del Consumidor (Ley N.° 29571) y su reglamento.</p>
+
+    <p>Este es el Libro de Reclamaciones virtual de <strong>Green Box Security S.A.C.</strong>, RUC 20537935929, con oficina principal en Jr. Unión #1200, Villa María del Triunfo, Lima, Perú. Aquí puedes registrar un <strong>reclamo</strong> (disconformidad relacionada a nuestros servicios) o una <strong>queja</strong> (disconformidad con la atención recibida).</p>
+    <p>Al enviar el formulario, tu reclamo se remite directamente a nuestro correo para su registro y atención dentro del plazo máximo de 30 días calendario establecido por ley. La formulación del reclamo no impide acudir a otras vías de solución de controversias, ni es requisito previo para interponer una denuncia ante el INDECOPI.</p>
+
+    <form class="contact-form" id="reclamoForm" style="margin-top:32px;max-width:none;">
+      <h2 style="font-size:16px;color:var(--text-heading);margin:0 0 4px;">1. Datos del consumidor reclamante</h2>
+      <input type="text" id="rNombre" placeholder="Nombre completo" required>
+      <input type="text" id="rDocumento" placeholder="Tipo y N.° de documento de identidad (DNI, CE, pasaporte)" required>
+      <input type="text" id="rDomicilio" placeholder="Domicilio" required>
+      <input type="tel" id="rTelefono" placeholder="Teléfono" required>
+      <input type="email" id="rEmail" placeholder="Correo electrónico" required>
+
+      <h2 style="font-size:16px;color:var(--text-heading);margin:20px 0 4px;">2. Identificación del servicio</h2>
+      <input type="text" id="rServicio" placeholder="Servicio contratado (ej. vigilancia, custodia, CCTV, limpieza...)" required>
+      <input type="text" id="rMonto" placeholder="Monto reclamado S/. (si aplica)">
+
+      <h2 style="font-size:16px;color:var(--text-heading);margin:20px 0 4px;">3. Detalle</h2>
+      <label class="contact-form__consent" style="margin-bottom:6px;">
+        <input type="radio" name="rTipo" value="Reclamo" checked style="margin-top:0;">
+        <span><strong>Reclamo</strong> — disconformidad relacionada a los servicios contratados</span>
+      </label>
+      <label class="contact-form__consent" style="margin-bottom:10px;">
+        <input type="radio" name="rTipo" value="Queja" style="margin-top:0;">
+        <span><strong>Queja</strong> — disconformidad con la atención al público</span>
+      </label>
+      <textarea id="rDetalle" placeholder="Detalle de tu reclamo o queja..." rows="4" required></textarea>
+      <textarea id="rPedido" placeholder="¿Qué solución esperas de nosotros?" rows="3" required></textarea>
+
+      <label class="contact-form__consent">
+        <input type="checkbox" required>
+        <span>Acepto que mis datos se usen solo para atender este reclamo, según la <a href="privacidad.html">Política de Privacidad</a>.</span>
+      </label>
+      <button type="submit">Enviar reclamo</button>
+      <p class="contact-form__success" id="reclamoSuccess" hidden>Se abrió tu correo con el reclamo redactado — solo confirma el envío. N.° de referencia: <span id="reclamoId"></span></p>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <a href="index.html" class="footer__brand">
+          <img src="assets/logo.jpg" alt="GreenBox Security" class="footer__logo">
+        </a>
+        <p>Protegemos lo que más valoras. Seguridad privada y vigilancia para empresas, condominios y obras en Lima y Callao.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Conócenos</h4>
+        <a href="empresa.html">La Empresa</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#sectores">Sectores que atendemos</a>
+        <a href="index.html#referencias">Referencias comerciales</a>
+      </div>
+      <div class="footer__col">
+        <h4>Atención al cliente</h4>
+        <a href="index.html#faq">Preguntas frecuentes</a>
+        <a href="libro-reclamaciones.html">Libro de Reclamaciones</a>
+        <a href="index.html#contacto">Contáctanos</a>
+      </div>
+      <div class="footer__col">
+        <h4>Legales</h4>
+        <a href="privacidad.html">Política de Privacidad</a>
+        <a href="aviso-legal.html">Aviso Legal</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/51924253351" target="_blank" rel="noopener">+51 924 253 351</a>
+        <a href="mailto:csotomayor@greenboxsecurity.com">csotomayor@greenboxsecurity.com</a>
+        <span>Jr. Unión #1200, Villa María del Triunfo, Lima, Perú</span>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 Green Box Security S.A.C. · Jr. Unión #1200, Villa María del Triunfo, Lima, Perú</div>
+  </footer>
+  <div class="credit-bar">Sitio web creado por <a href="https://nocodecreatoria.com/" target="_blank" rel="noopener">NoCode Creator</a></div>
+
+<script src="js/main.js"></script>
+<script>
+  (function () {
+    const form = document.getElementById('reclamoForm');
+    const success = document.getElementById('reclamoSuccess');
+    const idSpan = document.getElementById('reclamoId');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const id = 'GBS-' + Date.now().toString().slice(-8);
+      const tipo = form.querySelector('input[name="rTipo"]:checked').value;
+      const lines = [
+        'LIBRO DE RECLAMACIONES — GREEN BOX SECURITY S.A.C.',
+        'N.° de referencia: ' + id,
+        'Fecha: ' + new Date().toLocaleDateString('es-PE'),
+        '',
+        '1. DATOS DEL CONSUMIDOR',
+        'Nombre: ' + document.getElementById('rNombre').value,
+        'Documento: ' + document.getElementById('rDocumento').value,
+        'Domicilio: ' + document.getElementById('rDomicilio').value,
+        'Teléfono: ' + document.getElementById('rTelefono').value,
+        'Email: ' + document.getElementById('rEmail').value,
+        '',
+        '2. SERVICIO',
+        'Servicio: ' + document.getElementById('rServicio').value,
+        'Monto reclamado: ' + (document.getElementById('rMonto').value || 'No aplica'),
+        '',
+        '3. DETALLE',
+        'Tipo: ' + tipo,
+        'Detalle: ' + document.getElementById('rDetalle').value,
+        'Pedido del consumidor: ' + document.getElementById('rPedido').value
+      ];
+      const body = encodeURIComponent(lines.join('\n'));
+      const subject = encodeURIComponent('Libro de Reclamaciones - ' + tipo + ' ' + id);
+      idSpan.textContent = id;
+      success.hidden = false;
+      window.location.href = 'mailto:csotomayor@greenboxsecurity.com?subject=' + subject + '&body=' + body;
+    });
+  })();
+</script>
+</body>
+</html>
