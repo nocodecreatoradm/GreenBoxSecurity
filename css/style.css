@@ -531,6 +531,7 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
   display: grid; grid-template-columns: 0.85fr 1.15fr;
   gap: 56px; align-items: center;
 }
+.about__inner > * { min-width: 0; }
 .about__photo {
   width: 100%; aspect-ratio: 4 / 3;
   border-radius: 20px;
@@ -645,6 +646,7 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
   border: 1px solid var(--border);
   box-shadow: 0 20px 50px -30px rgba(0,0,0,.6);
 }
+.contact-card__info, .contact-form { min-width: 0; }
 .contact-card__info h2 { font-size: clamp(26px, 2.8vw, 32px); font-weight: 700; color: var(--text-heading); margin: 0 0 16px; }
 .contact-card__info p { font-size: 15.5px; line-height: 1.65; color: var(--text-body); margin: 0 0 28px; }
 
@@ -667,6 +669,8 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
   border-radius: 12px; padding: 16px 18px; margin-bottom: 12px;
   font-weight: 600;
   transition: transform .2s ease, box-shadow .2s ease;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 .contact-link--wa { background: var(--green-soft-bg); color: var(--green-soft-fg); }
 .contact-link--wa:hover { color: var(--green-soft-fg); transform: translateX(4px); box-shadow: 0 8px 18px -12px oklch(0.5 0.14 152 / 0.5); }
@@ -740,6 +744,7 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
   gap: 32px;
   padding-bottom: 40px;
 }
+.footer__col { min-width: 0; }
 .footer__brand { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
 .footer__logo { height: 26px; width: auto; opacity: 0.9; }
 .footer__col p { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin: 0; }
@@ -750,6 +755,7 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
 .footer__col a, .footer__col span {
   display: block; font-size: 13.5px; color: var(--text-muted);
   margin-bottom: 11px; line-height: 1.5;
+  overflow-wrap: break-word;
 }
 .footer__col a:hover { color: var(--green); }
 .footer__bottom {
