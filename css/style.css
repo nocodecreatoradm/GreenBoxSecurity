@@ -310,11 +310,19 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
   z-index: 0;
   pointer-events: none;
 }
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
 .hero__overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(90deg, oklch(0.08 0.012 155 / 0.92) 0%, oklch(0.08 0.012 155 / 0.55) 48%, oklch(0.08 0.012 155 / 0.05) 78%);
+  background: linear-gradient(90deg, oklch(0.08 0.012 155 / 0.95) 0%, oklch(0.08 0.012 155 / 0.72) 48%, oklch(0.08 0.012 155 / 0.35) 78%);
 }
 .hero__copy {
   position: relative;
