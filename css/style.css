@@ -670,6 +670,7 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
 
 .contact-form { display: flex; flex-direction: column; gap: 14px; }
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
   padding: 14px 16px;
   border-radius: 10px;
@@ -680,10 +681,17 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
   font-family: inherit;
   transition: border-color .2s ease, box-shadow .2s ease;
 }
+.contact-form select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; background-size: 16px; padding-right: 40px; }
+.contact-form select:invalid { color: var(--text-muted); }
+.form-row { display: flex; gap: 12px; }
+.form-row select { flex: 0 0 42%; }
+.form-row input { flex: 1; }
+@media (max-width: 480px) { .form-row { flex-direction: column; } .form-row select { flex-basis: auto; } }
 .contact-form input::placeholder,
 .contact-form textarea::placeholder { color: var(--text-muted); }
 .contact-form textarea { resize: vertical; }
 .contact-form input:focus,
+.contact-form select:focus,
 .contact-form textarea:focus {
   border-color: var(--green);
   box-shadow: 0 0 0 3px oklch(0.6 0.14 152 / 0.18);

@@ -31,13 +31,32 @@
     <form class="contact-form" id="reclamoForm" style="margin-top:32px;max-width:none;">
       <h2 style="font-size:16px;color:var(--text-heading);margin:0 0 4px;">1. Datos del consumidor reclamante</h2>
       <input type="text" id="rNombre" placeholder="Nombre completo" required>
-      <input type="text" id="rDocumento" placeholder="Tipo y N.° de documento de identidad (DNI, CE, pasaporte)" required>
+      <div class="form-row">
+        <select id="rTipoDoc" required>
+          <option value="" disabled selected>Tipo de documento</option>
+          <option value="DNI">DNI</option>
+          <option value="Carné de Extranjería">Carné de Extranjería</option>
+          <option value="Pasaporte">Pasaporte</option>
+          <option value="RUC">RUC</option>
+          <option value="Otro">Otro</option>
+        </select>
+        <input type="text" id="rDocumento" placeholder="N.° de documento" required>
+      </div>
       <input type="text" id="rDomicilio" placeholder="Domicilio" required>
       <input type="tel" id="rTelefono" placeholder="Teléfono" required>
       <input type="email" id="rEmail" placeholder="Correo electrónico" required>
 
       <h2 style="font-size:16px;color:var(--text-heading);margin:20px 0 4px;">2. Identificación del servicio</h2>
-      <input type="text" id="rServicio" placeholder="Servicio contratado (ej. vigilancia, custodia, CCTV, limpieza...)" required>
+      <select id="rServicio" required>
+        <option value="" disabled selected>Servicio contratado</option>
+        <option value="Vigilancia y guardias">Vigilancia y guardias</option>
+        <option value="Custodia y escolta">Custodia y escolta</option>
+        <option value="Videovigilancia / CCTV">Videovigilancia / CCTV</option>
+        <option value="Seguridad electrónica">Seguridad electrónica</option>
+        <option value="Servicios complementarios (administrativo, guardianía, operarios)">Servicios complementarios (administrativo, guardianía, operarios)</option>
+        <option value="Limpieza y mantenimiento">Limpieza y mantenimiento</option>
+        <option value="Otro">Otro</option>
+      </select>
       <input type="text" id="rMonto" placeholder="Monto reclamado S/. (si aplica)">
 
       <h2 style="font-size:16px;color:var(--text-heading);margin:20px 0 4px;">3. Detalle</h2>
@@ -116,7 +135,7 @@
         '',
         '1. DATOS DEL CONSUMIDOR',
         'Nombre: ' + document.getElementById('rNombre').value,
-        'Documento: ' + document.getElementById('rDocumento').value,
+        'Documento: ' + document.getElementById('rTipoDoc').value + ' ' + document.getElementById('rDocumento').value,
         'Domicilio: ' + document.getElementById('rDomicilio').value,
         'Teléfono: ' + document.getElementById('rTelefono').value,
         'Email: ' + document.getElementById('rEmail').value,
