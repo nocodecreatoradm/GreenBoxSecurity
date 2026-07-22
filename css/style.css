@@ -774,6 +774,17 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; margin: 0; }
 .credit-bar a { color: var(--text-muted); text-decoration: underline; }
 .credit-bar a:hover { color: var(--green); }
 
+/* ---------- Legal data table ---------- */
+.legal-table { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+.legal-table__row { display: grid; grid-template-columns: 200px 1fr; border-bottom: 1px solid var(--border); }
+.legal-table__row--last { border-bottom: none; }
+.legal-table__label { padding: 16px 20px; font-size: 13px; font-weight: 700; color: var(--text-heading); background: var(--surface-alt); }
+.legal-table__value { padding: 16px 20px; font-size: 14px; color: var(--text-body); }
+@media (max-width: 600px) {
+  .legal-table__row { grid-template-columns: 1fr; }
+  .legal-table__label { border-bottom: 1px solid var(--border); }
+}
+
 /* ---------- Legal pages ---------- */
 .legal {
   max-width: 760px;
